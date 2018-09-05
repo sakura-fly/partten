@@ -7,8 +7,14 @@ public class ClientWithFactory {
         Car byd = CarFactory.createCar("比亚迪");
 
 
-        ad.run();
-        byd.run();
+        try {
+            assert ad != null;
+            ad.run();
+            assert byd != null;
+            byd.run();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 }
