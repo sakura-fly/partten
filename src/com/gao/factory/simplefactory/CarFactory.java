@@ -1,7 +1,7 @@
 package com.gao.factory.simplefactory;
 
 public class CarFactory {
-    public Car createCar(String type) {
+    public static Car createCar(String type) {
         switch (type) {
             case "奥迪":
                 return new Audi();
