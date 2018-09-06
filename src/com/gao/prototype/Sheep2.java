@@ -1,8 +1,9 @@
 package com.gao.prototype;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Sheep2 implements Cloneable{// 这是多利2
+public class Sheep2 implements Cloneable,Serializable {// 这是多利2
     private String name;
     private Date birthday;
 
